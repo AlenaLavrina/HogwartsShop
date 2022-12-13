@@ -5,15 +5,12 @@
     <link th:href="@{/css/index.css}" type="text/css" rel="stylesheet">
     <title>Заказы<</title>
 </head>
-<header class="header_admin">
+<header>
     <img class="logo" src="/img/logo.png">
-    <form method="get" th:action="@{/admin/product/add}">
-        <input type="submit" class="header_btn" value="Добавить товар">
+    <form method="get" th:action="@{/cart}">
+        <input type="submit" class="header_btn" value="Корзина">
     </form>
-    <form method="get" th:action="@{/admin/users}">
-        <input type="submit" class="header_btn" value="Пользователи">
-    </form>
-    <form method="get" th:action="@{/admin/ordersAdmin}">
+    <form method="get" th:action="@{/orders}">
         <input type="submit" class="header_btn" value="Заказы">
     </form>
     <form method="post" th:action="@{/logout}">
